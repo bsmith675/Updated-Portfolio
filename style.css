@@ -1,0 +1,204 @@
+:root {
+    --color1: white;
+    --color2: yellow;
+    --color3: grey;
+    --color4: #5c8583;
+
+}
+
+* {
+
+    Padding: 0;
+    Margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif
+}
+
+header {
+    background-color: var(--color4);
+    padding: 20px 35px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bolder;
+    font-size: 36px;
+    margin: 0;
+}
+
+header nav {
+    margin: 7px 0;
+    width: 40%
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color2);
+}
+
+header nav ul {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-size: 24px;
+    font-weight: bolder;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+header nav ul li a:hover {
+    background: var(--color4);
+    border-radius: 15px;
+    color: var(--color4);
+    text-shadow: none;
+
+}
+
+/* profile picture */
+
+.profile-pic-container {
+    padding: 20px 50px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: var(--color1);
+}
+
+/*styling*/
+
+.title-container {
+    width: 12%;
+    padding-right: 10px;
+    display: flex;
+    border-right: 3px solid var(--color2);
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+.content-row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    display: flex;
+    background-color: var(--color4);
+    padding: 20px 35px;
+    color: var(--color2);
+}
+
+.title-container h2 {
+    font-size: 28px;
+    margin-left: 8px;
+}
+
+/*about me*/
+
+.plain-text-conainer {
+    width: 88%;
+    line-height: 1.5;
+    padding-left: 10px;
+    text-align: center;
+
+}
+
+section a {
+    color: var(--color2);
+}
+
+/*portfolio*/
+
+.project-container {
+    min-height: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 88%
+}
+
+.project-container p {
+    color: var(--color2);
+    text-shadow: 0 0 0;
+    font-weight: bold;
+    padding: 5px 5px;
+    bottom: 10px;
+    position: absolute;
+    border: 3px solid var(--color2);
+    background-color: var(--color1);
+}
+
+.project {
+    position: relative;
+    width: 45%;
+    background-image: url('');
+    margin: 10px 10px;
+}
+
+.project:hover{
+    opacity: .75;
+}
+
+#project1{
+    background-size: cover;
+    background-image: url('');
+}
+
+#project2{
+    background-size: cover;
+    background-image: url('');
+}
+
+#project3{
+    background-size:cover;
+    background-image: url('');
+}
+
+/*sectioning*/
+
+section nav {
+    margin: 7px 0;
+    width: 88%;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+section nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+    justify-content: space-evenly;
+    
+}
+
+section nav ul li a:hover {
+    border-radius: 15px;
+    background: var(--color4);
+    color: var(--color3);
+    text-shadow:none;
+}
+
+section nav ul li a {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
